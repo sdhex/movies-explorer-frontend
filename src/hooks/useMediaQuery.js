@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export const useMediaQuery = maxWidth => {
+export const useMediaQuery = (maxWidth) => {
   const [isMedia, setIsMedia] = useState(false);
 
   const handleResize = () => {

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import './Overlay.css';
 
 export default function Overlay({ onClick }) {
-  useEffect(() => { }, []);
+  useEffect(() => {}, []);
 
-  return <div className='overlay' onClick={onClick}></div>;
+  return <div className="overlay" onClick={onClick}></div>;
 }

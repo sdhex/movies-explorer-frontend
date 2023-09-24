@@ -16,14 +16,15 @@ function Header() {
 
   return (
     <header
-      className={`header ${location.pathname === '/' ? 'wrapper__bg-promo' : ''
-        }`}
+      className={`header ${
+        location.pathname === '/' ? 'wrapper__bg-promo' : ''
+      }`}
     >
-      <div className='container'>
-        <div className='header__wrapper'>
+      <div className="container">
+        <div className="header__wrapper">
           <Logo />
           {loggedIn ? (
-            <div className='header__menu header__menu_noauth'>
+            <div className="header__menu header__menu_noauth">
               {isMedia768 & loggedIn ? (
                 <HeaderMobileMenu isHeader={false} />
               ) : (
@@ -34,7 +35,7 @@ function Header() {
               )}
             </div>
           ) : (
-            <div className='header__menu header__menu--auth'>
+            <div className="header__menu header__menu--auth">
               <SignupLink />
               <SigninLink />
             </div>

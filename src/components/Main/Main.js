@@ -7,7 +7,7 @@ import Techs from './Techs/Techs';
 
 function Main() {
   return (
-    <main className='main'>
+    <main className="main">
       <Promo />
       <NavTab />
       <AboutProject />

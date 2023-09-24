@@ -1,75 +1,75 @@
 .promo {
-	width: 100%;
-	min-height: 521px;
-	background-color: var(--bg-color-promo);
-	position: relative;
+  width: 100%;
+  min-height: 521px;
+  background-color: var(--bg-color-promo);
+  position: relative;
 }
 
 .promo__wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 82px 0px 119px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 82px 0px 119px;
 }
 
 .promo__title {
-	font-size: 50px;
-	line-height: 58px;
-	letter-spacing: -0.04em;
-	text-align: center;
-	width: 720px;
-	position: absolute;
-	margin: 0;
-	top: 45.8%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 10;
+  font-size: 50px;
+  line-height: 58px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  width: 720px;
+  position: absolute;
+  margin: 0;
+  top: 45.8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 }
 
 .promo__bg-image {
-	width: 320px;
-	height: 320px;
+  width: 320px;
+  height: 320px;
 }
 
 @media (max-width: 768px) {
-	.promo {
-		height: calc(100dvh - 78.8px);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.promo__title {
-		width: 100%;
-		padding: 0 20px;
-	}
+  .promo {
+    height: calc(100dvh - 78.8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .promo__title {
+    width: 100%;
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 768px) {
-	.promo__wrapper {
-		padding: 98px 0px 119px;
-	}
-	.promo__title {
-		top: 48.7%;
-	}
+  .promo__wrapper {
+    padding: 98px 0px 119px;
+  }
+  .promo__title {
+    top: 48.7%;
+  }
 }
 
 @media (max-width: 420px) {
-	.promo {
-		min-height: 480px;
-	}
-	.promo__wrapper {
-		padding: 98px 0px 134px;
-	}
-	.promo__title {
-		font-size: 31px;
-		line-height: 39px;
-		padding: 0 10px;
-		letter-spacing: -0.04em;
-		top: 46.1%;
-	}
+  .promo {
+    min-height: 480px;
+  }
+  .promo__wrapper {
+    padding: 98px 0px 134px;
+  }
+  .promo__title {
+    font-size: 31px;
+    line-height: 39px;
+    padding: 0 10px;
+    letter-spacing: -0.04em;
+    top: 46.1%;
+  }
 
-	.promo__bg-image {
-		width: 248px;
-		height: 248px;
-	}
+  .promo__bg-image {
+    width: 248px;
+    height: 248px;
+  }
 }

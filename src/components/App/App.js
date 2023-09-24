@@ -14,17 +14,17 @@ function App() {
   const [isErrorPage, setErrorPage] = useState(false);
 
   return (
-    <div className='App'>
+    <div className="App">
       <AppLayout isErrorPage={isErrorPage}>
         <Routes>
-          <Route path='/profile' element={<Profile />} />
+          <Route path="/profile" element={<Profile />} />
           <Route index element={<Main />} />
-          <Route path='/movies' element={<Movies />} />
-          <Route path='/saved-movies' element={<SavedMovies />} />
-          <Route path='/signin' element={<Login />} />
-          <Route path='/signup' element={<Register />} />
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/saved-movies" element={<SavedMovies />} />
+          <Route path="/signin" element={<Login />} />
+          <Route path="/signup" element={<Register />} />
           <Route
-            path='*'
+            path="*"
             element={<NotFound setIsErrorPage={setErrorPage} />}
           />
         </Routes>

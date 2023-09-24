@@ -8,15 +8,17 @@ function ProfileButton({ onClick, isHeader }) {
   const location = useLocation();
   return (
     <Link
-      to='/profile'
-      aria-label='Профиль'
-      className='profile-button'
+      to="/profile"
+      aria-label="Профиль"
+      className="profile-button"
       onClick={onClick}
     >
       Аккаунт
       <img
-        src={location.pathname === '/' && isHeader ? ProfileIconMain : ProfileIcon}
-        alt='Profile'
+        src={
+          location.pathname === '/' && isHeader ? ProfileIconMain : ProfileIcon
+        }
+        alt="Profile"
       />
     </Link>
   );
