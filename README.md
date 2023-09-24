@@ -1,1 +1,5 @@
-# movies-explorer-frontend
+# Movies Explorer
+
+## Макет
+
+- light-4
