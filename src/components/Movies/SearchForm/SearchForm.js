@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import FilterCheckbox from '../../FilterCheckbox/FilterCheckbox';
-
 import './SearchForm.css';
 
 function SearchForm() {
@@ -8,13 +7,12 @@ function SearchForm() {
 
   return (
     <div className='container-movie'>
-      <div className='search-form__box'>
+      <div className='container-movie__search-box'>
         <form
           className='search-form'
           id='search-and-filter'
           action='#'
           name='search-and-filter'
-          noValidate
         >
           <div className='search-form__search'>
             <input
@@ -37,8 +35,8 @@ function SearchForm() {
               className='search-form__icon'
             >
               <path
-                fill-rule='evenodd'
-                clip-rule='evenodd'
+                fillRule='evenodd'
+                clipRule='evenodd'
                 d='M7.79292 8.26377C6.361 9.69569 4.03939 9.69569 2.60747 8.26377C1.17555 6.83185 1.17555 4.51024 2.60747 3.07832C4.03939 1.6464 6.361 1.6464 7.79292 3.07832C9.22484 4.51024 9.22484 6.83185 7.79292 8.26377ZM8.2333 9.64673C6.27308 11.1461 3.45749 10.9994 1.66466 9.20658C-0.28796 7.25396 -0.28796 4.08813 1.66466 2.13551C3.61728 0.182888 6.78311 0.182888 8.73573 2.13551C10.5285 3.92826 10.6753 6.74368 9.17608 8.70389L12.7428 12.2706L11.8 13.2134L8.2333 9.64673Z'
                 fill='#959595'
               />
@@ -56,7 +54,7 @@ function SearchForm() {
             filterForm='search-and-filter'
           />
         </form>
-        <span className='search-form__error'></span>
+        <span className='container-movie__error'></span>
       </div>
     </div>
   );

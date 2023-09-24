@@ -102,6 +102,7 @@
     flex-direction: column-reverse;
     align-items: center;
     margin-top: 60px;
+    gap: 40px;
   }
 
   .about-me__links {
@@ -114,10 +115,7 @@
   }
 }
 
-@media (max-width: 420px) {
-  .about-me__info {
-    margin-top: 37px;
-  }
+@media (max-width: 480px) {
   .about-me__name {
     margin-bottom: 20px;
     font-size: 30px;

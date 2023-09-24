@@ -4,7 +4,7 @@ import ProfileIconMain from '../../../images/profile-icon-main.svg';
 import ProfileIcon from '../../../images/profile-icon.svg';
 import './ProfileButton.css';
 
-function ProfileButton({ onClick }) {
+function ProfileButton({ onClick, isHeader }) {
   const location = useLocation();
   return (
     <Link
@@ -15,7 +15,7 @@ function ProfileButton({ onClick }) {
     >
       Аккаунт
       <img
-        src={location.pathname === '/' ? ProfileIconMain : ProfileIcon}
+        src={location.pathname === '/' && isHeader ? ProfileIconMain : ProfileIcon}
         alt='Profile'
       />
     </Link>

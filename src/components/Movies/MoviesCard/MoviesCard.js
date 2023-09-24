@@ -28,7 +28,7 @@ function MoviesCard({ card, isSaved, onCardSave }) {
             <path
               d='M0.5 3.34998L3.31905 5.59998L8.5 1.09998'
               stroke='white'
-              stroke-width='1.3'
+              strokeWidth='1.3'
             />
           </svg>
         ) : (

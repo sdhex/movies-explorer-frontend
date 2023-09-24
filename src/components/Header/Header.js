@@ -4,7 +4,7 @@ import HeaderMobileMenu from '../HeaderMobileMenu/HeaderMobileMenu';
 import SigninLink from '../Login/SigninLink/SignInLink';
 import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
-import AccountButton from '../Profile/ProfileButton/ProfileButton';
+import ProfileButton from '../Profile/ProfileButton/ProfileButton';
 import SignupLink from '../Register/SignupLink/SignupLink';
 
 import './Header.css';
@@ -25,11 +25,11 @@ function Header() {
           {loggedIn ? (
             <div className='header__menu header__menu_noauth'>
               {isMedia768 & loggedIn ? (
-                <HeaderMobileMenu />
+                <HeaderMobileMenu isHeader={false} />
               ) : (
                 <>
                   <Navigation />
-                  <AccountButton />
+                  <ProfileButton isHeader={true} />
                 </>
               )}
             </div>

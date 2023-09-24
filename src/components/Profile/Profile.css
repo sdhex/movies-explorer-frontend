@@ -70,7 +70,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .profile {
     padding: 50px 0 42px;
   }

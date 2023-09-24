@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../Navigation/Navigation';
 import Overlay from '../Overlay/Overlay';
-import AccountButton from '../Profile/ProfileButton/ProfileButton';
+import ProfileButton from '../Profile/ProfileButton/ProfileButton';
 import './HeaderMobileMenu.css';
 
 function HeaderMobileMenu() {
@@ -39,7 +39,7 @@ function HeaderMobileMenu() {
           <Navigation onClick={handleShowMobileMenu} />
         </div>
         <div className='header-mobile-menu__bottom'>
-          <AccountButton onClick={handleShowMobileMenu} />
+          <ProfileButton onClick={handleShowMobileMenu} />
         </div>
       </div>
     </>
