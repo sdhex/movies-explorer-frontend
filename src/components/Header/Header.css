@@ -1,0 +1,32 @@
+.header {
+  padding: 18px 0;
+}
+
+.wrapper__bg-promo {
+  background-color: var(--bg-color-promo);
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu_noauth {
+  gap: 50px;
+}
+
+.header__menu--auth {
+  gap: 30px;
+}
+
+@media (max-width: 480px) {
+  .header__menu--auth {
+    gap: 14px;
+  }
+}

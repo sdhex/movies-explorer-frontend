@@ -1,0 +1,7 @@
+.profile-button {
+	display: flex;
+	align-items: center;
+	gap: 13px;
+	color: var(--black);
+	font-weight: 500;
+}

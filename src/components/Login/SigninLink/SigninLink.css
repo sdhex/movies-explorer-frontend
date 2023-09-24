@@ -1,0 +1,15 @@
+.signin-link {
+	background-color: var(--black);
+	color: var(--white);
+	font-weight: 500;
+	font-size: 12px;
+	padding: 8px 20px;
+	border-radius: 3px;
+}
+
+@media (max-width: 480px) {
+	.signin-link {
+		font-size: 10px;
+		padding: 5px 12px;
+	}
+}

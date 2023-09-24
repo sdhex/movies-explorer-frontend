@@ -1,0 +1,140 @@
+.header__button {
+  background-color: transparent;
+  width: 44px;
+  height: 44px;
+  position: fixed;
+  top: 26px;
+  right: 22px;
+  outline: none;
+  z-index: 60;
+}
+
+.header__button span {
+  display: block;
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background-color: var(--black);
+  transition: all 0.4s;
+}
+
+.header__button span:nth-child(1) {
+  top: 0;
+}
+
+.header__button span:nth-child(2) {
+  top: 10px;
+}
+
+.header__button span:nth-child(3) {
+  top: 20px;
+}
+
+.header__button_open {
+  padding-left: 15px;
+}
+
+.header__button_open span:nth-child(1) {
+  transform: rotate(45deg) translate(9px, 7px);
+  width: 22px;
+  height: 3px;
+}
+
+.header__button_open span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__button_open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -5px);
+  width: 22px;
+  height: 3px;
+}
+
+.header-mobile-menu {
+  position: fixed;
+  top: 0;
+  background-color: var(--white);
+  width: 100vw;
+  height: 100dvh;
+  max-width: 520px;
+  min-height: 600px;
+  z-index: 50;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 160px 20px 92px;
+  transition: all 0.5s;
+}
+
+.header-mobile-menu--show {
+  display: flex;
+  right: 0;
+}
+
+.header-mobile-menu__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--black);
+  gap: 17px;
+}
+
+.header-mobile-menu__main-link {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.header-mobile-menu__main-link:hover {
+  border-bottom: 2px solid var(--black);
+}
+
+@media (max-width: 320px) {
+  .header__button {
+    top: 18px;
+    right: 16px;
+    width: 40px;
+    height: 43px;
+  }
+
+  .header__button span {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 2.5px;
+    background-color: var(--black);
+    transition: all 0.4s;
+  }
+
+  .header__button span:nth-child(1) {
+    top: 0;
+  }
+
+  .header__button span:nth-child(2) {
+    top: 9px;
+  }
+
+  .header__button span:nth-child(3) {
+    top: 18px;
+  }
+
+  .header-mobile-menu {
+    min-height: 480px;
+    padding: 144px 20px 48px;
+  }
+  .header__button_open span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 6px);
+  }
+
+  .header__button_open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .header__button_open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -5px);
+  }
+}
