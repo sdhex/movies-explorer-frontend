@@ -1,0 +1,31 @@
+.navigation__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navigation__link {
+  color: var(--black);
+  font-weight: 400;
+  outline: none;
+}
+
+.navigation__link:hover {
+  font-weight: 500;
+}
+
+.navigation__link:focus {
+  border-bottom: 1px solid var(--black);
+}
+
+@media (max-width: 768px) {
+  .navigation__list {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .navigation__link {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

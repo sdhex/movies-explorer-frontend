@@ -1,0 +1,156 @@
+.about-project {
+  padding: 110px 0;
+}
+
+.about-project__text {
+  display: flex;
+  justify-content: space-between;
+  gap: 51px;
+  margin: 70px 0 110px;
+}
+
+.about-project__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.about-project__text-title {
+  font-size: 20px;
+  letter-spacing: -0.04em;
+}
+
+.about-project__info {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.about-project__schedule {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding-bottom: 32px;
+}
+
+.about-project__schedule span {
+  position: relative;
+  text-align: center;
+  padding: 9px 0 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+.about-project__schedule span::after {
+  position: absolute;
+  text-align: center;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--text-gray);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.about-project__schedule span:nth-child(1) {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.about-project__schedule span:nth-child(1)::after {
+  content: 'Back-end';
+}
+
+.about-project__schedule span:nth-child(2) {
+  background-color: var(--light-gray);
+  color: var(--black);
+}
+
+.about-project__schedule span:nth-child(2)::after {
+  content: 'Front-end';
+}
+
+@media (max-width: 960px) {
+  .about-project {
+    padding: 90px 20px;
+  }
+
+  .about-project__info {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .about-project__text {
+    gap: 37px;
+    margin-bottom: 93px;
+  }
+
+  .about-project__text-container {
+    gap: 22px;
+  }
+
+  .about-project__schedule {
+    grid-template-columns: 1.1fr 4.2fr;
+  }
+
+  .about-project__schedule span {
+    font-size: 14px;
+    padding: 10px 0 9px;
+  }
+
+  .about-project__schedule span::after {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 720px) {
+  .about-project__text {
+    flex-direction: column;
+    gap: 59px;
+    margin: 61px 0;
+  }
+
+  .about-project__schedule {
+    grid-template-columns: 2fr 4fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-project__schedule span {
+    font-size: 11px;
+  }
+
+  .about-project__schedule span::after {
+    font-size: 11px;
+    bottom: -24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-project {
+    padding: 71px 4px;
+  }
+
+  .about-project__text {
+    margin: 59px 0;
+    gap: 56px;
+  }
+
+  .about-project__text-container {
+    gap: 14px;
+  }
+
+  .about-project__text-title {
+    font-size: 18px;
+    letter-spacing: -0.04em;
+  }
+
+  .about-project__info {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: -0.04em;
+  }
+
+  .about-project__schedule {
+    grid-template-columns: 2.22fr 4fr;
+  }
+}

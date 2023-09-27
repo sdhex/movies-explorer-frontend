@@ -1,0 +1,11 @@
+.signup-link {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+@media (max-width: 480px) {
+  .signup-link {
+    font-size: 10px;
+  }
+}
