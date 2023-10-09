@@ -2,14 +2,16 @@
 
 ## Ссылка на PR
 
+- https://github.com/sdhex/movies-explorer-frontend/pull/2
+
 ## Макет
 
 - light-4
 
 ## Домен фронтенда
 
-- movie-explorer.nomoredomainsicu.ru
+- https://movie-explorer.nomoredomainsicu.ru
 
 ## Домен бэкенда
 
-- api.movie-explore.nomoredomainsicu.ru
+- https://api.movie-explore.nomoredomainsicu.ru
