@@ -5,9 +5,16 @@
   --hover-black: rgba(0, 0, 0, 0.7);
   --light-gray: #f2f2f2;
   --text-gray: #a0a0a0;
+  --disabled: #c2c2c2;
   --border-gray: #e8e8e8;
   --bg-color-gray: #f9f9f9;
   --bg-color-promo: #f3c1f8;
+  --bg-color-disabled: #f8f8f8;
   --main-font: 'Inter', 'Arial', sans-serif;
   --color: color 0.3s;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1280px;
 }

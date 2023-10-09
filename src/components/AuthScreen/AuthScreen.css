@@ -10,7 +10,7 @@
 }
 
 .auth-screen--login {
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
 }
 
 .auth-screen--login > .auth-screen__form > .form__button {
@@ -46,6 +46,10 @@
   display: block;
   margin-bottom: 20px;
   position: relative;
+}
+
+.form__input-wrapper--error {
+  color: #ff4062;
 }
 
 .form__input {
@@ -86,6 +90,11 @@
   margin-top: 70px;
   outline: 1px solid transparent;
   transition: all 0.3s;
+}
+.form__button:disabled {
+  opacity: 1;
+  color: var(--disabled);
+  background-color: var(--bg-color-disabled);
 }
 
 .form__button:focus {

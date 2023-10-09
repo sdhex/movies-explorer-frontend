@@ -56,7 +56,7 @@ body {
   background-color: var(--white);
 }
 
-.wrapper {
+.app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -81,6 +81,11 @@ main {
 button {
   background: none;
   cursor: pointer;
+}
+button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 @media (max-width: 480px) {
